@@ -1,5 +1,4 @@
 var express = require("express");
-var path = require("path");
 const fs = require("fs");
 
 // Sets up the Express App
@@ -12,18 +11,10 @@ var PORT = 3000;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//post reservation data
 
-//routes for html pages
-app.get("/", function(request, response) {
-    response.sendFile(path.join(__dirname, "../FriendFinder/App/Public/home.html"));
-});
-
-app.get("/survey", function(request, response) {
-    response.sendFile(path.join(__dirname, "../FriendFinder/App/Public/survey.html"));
-});
-
-
+// Router for our "route" files.
+// require("./App/Routing/apiRoutes")(app);
+require("./App/Routing/htmlRoutes")(app);
 
 //Listen for Server Port
 app.listen(PORT, function() {
