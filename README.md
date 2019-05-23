@@ -1,0 +1,1 @@
+This Server side app, asks a user a set of questions, takes in all the user data and tries to associate that user with others that have gone through the app previously to see who are close match ups and would be great friends!
