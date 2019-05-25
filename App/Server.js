@@ -14,7 +14,7 @@ app.use(express.json());
 
 // Router for our "route" files.
 // require("./App/Routing/apiRoutes")(app);
-require("./App/Routing/htmlRoutes")(app);
+require("./Routing/htmlRoutes")(app);
 
 //Listen for Server Port
 app.listen(PORT, function() {
