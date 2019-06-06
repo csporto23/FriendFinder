@@ -2,17 +2,10 @@
   "name": "friendfinder",
   "version": "1.0.0",
   "description": "This Server side app, asks a user a set of questions, takes in all the user data and tries to associate that user with others that have gone through the app previously to see who are close match ups and would be great friends!",
-  "main": "index.js",
-  "dependencies": {
-    "dotenv": "^8.0.0",
-    "express": "^4.17.1",
-    "inquirer": "^6.3.1",
-    "mysql": "^2.17.1",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {},
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/csporto23/FriendFinder/issues"
   },
-  "homepage": "https://github.com/csporto23/FriendFinder#readme"
+  "homepage": "https://github.com/csporto23/FriendFinder#readme",
+  "dependencies": {
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "path": "^0.12.7"
+  }
 }

@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-require("./routing/htmlRoutes")(app);
+require("./app/routing/htmlRoutes")(app);
 
 //Listen for Server Port
 app.listen(PORT, function() {
