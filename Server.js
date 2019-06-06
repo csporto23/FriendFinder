@@ -12,9 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 
-// Router for our "route" files.
-// require("./App/Routing/apiRoutes")(app);
-require("./Routing/htmlRoutes")(app);
+require("./app/Routing/htmlRoutes")(app);
 
 //Listen for Server Port
 app.listen(PORT, function() {
